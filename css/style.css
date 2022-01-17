@@ -16,15 +16,6 @@
   BASE
   ------------------*/
 
-*,
-*::before,
-*::after {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-	border: 0;
-}
-
 body {
 	font-family: "PT Sans", sans-serif;
 	background-color: #252529;
@@ -51,28 +42,27 @@ img {
   ------------------*/
 
 .container {
-	max-width: 1200px;
+	max-width: 1180px;
 	text-align: center;
 	margin: 0 auto;
-	padding: 0 2rem;
+	padding: 0 3rem;
 }
 
 .lead-text {
 	font-size: 1.3rem;
-	margin: 1.3rem 0;
 }
 
-.section {
-	padding: 2rem 0;
+.text-blue {
+	color: var(--blue-color);
 }
 
-.section-heading {
-	font-size: 2.5rem;
+.text-light {
+	color: var(--light-gray-color);
 }
 
-.section-subheading {
-	font-size: 2rem;
-	margin: 1.3rem 0;
+.bg-light {
+	background-color: var(--light-gray-color);
+	color: #333;
 }
 
 .btn {
@@ -95,15 +85,6 @@ img {
 
 .btn-blue:hover {
 	background: var(--blue-color-hover);
-}
-
-.text-light {
-	color: var(--light-gray-color);
-}
-
-.bg-light {
-	background-color: var(--light-gray-color);
-	color: #333;
 }
 
 /*------------------
@@ -205,6 +186,8 @@ img {
   ------------------*/
 
 .main-visual {
+	margin: 0;
+	padding: 0;
 	background: url("../img/showcase.jpg") no-repeat center/cover;
 	width: 100%;
 	height: 100vh;
@@ -218,11 +201,11 @@ img {
 
 .main-heading {
 	font-size: 4rem;
+	margin-bottom: 0;
 }
 
 .main-subheading {
 	font-size: 2rem;
-	margin: 1.4rem 0;
 }
 
 /* MAIN VISUAL - Media Queries */
@@ -245,12 +228,38 @@ img {
 }
 
 /*------------------
-  ENTERTAINMENT SECTION
+  SECTION
   ------------------*/
+
+.section {
+	padding: 2rem 0;
+}
+
+.section-heading {
+	font-size: 2.5rem;
+	margin: 0;
+}
+
+.section-subheading {
+	font-size: 2rem;
+}
+
+/* ENTERTAINMENT SECTION */
 
 .entertainment {
 	background: url("../img/section-bg.jpg") no-repeat bottom/cover;
 	padding: 10rem 0;
+}
+
+/*------------------
+  GIFT CARDS
+  ------------------*/
+
+.gift-cards {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(2, 1fr);
+	text-align: left;
 }
 
 /*------------------
