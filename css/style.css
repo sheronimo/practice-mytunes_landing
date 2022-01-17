@@ -227,6 +227,12 @@ img {
 	}
 }
 
+@media screen and (max-height: 580px) {
+	.main-desc {
+		display: none;
+	}
+}
+
 /*------------------
   SECTION
   ------------------*/
@@ -262,6 +268,14 @@ img {
 	text-align: left;
 }
 
+/* GIFT CARDS - Media Queries */
+
+@media screen and (max-width: 780px) {
+	.gift-cards {
+		grid-template-columns: 1fr;
+	}
+}
+
 /*------------------
   FOOTER
   ------------------*/
@@ -289,6 +303,13 @@ img {
 	text-align: center;
 	padding: 1rem;
 }
+
+@media screen and (max-width: 780px) {
+	.footer-cols {
+		display: none;
+	}
+}
+
 /*------------------
   UTILITY
   ------------------*/
