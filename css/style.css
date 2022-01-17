@@ -101,6 +101,11 @@ img {
 	color: var(--light-gray-color);
 }
 
+.bg-light {
+	background-color: var(--light-gray-color);
+	color: #333;
+}
+
 /*------------------
   NAVIGATION
   ------------------*/
