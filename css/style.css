@@ -245,6 +245,15 @@ img {
 }
 
 /*------------------
+  ENTERTAINMENT SECTION
+  ------------------*/
+
+.entertainment {
+	background: url("../img/section-bg.jpg") no-repeat bottom/cover;
+	padding: 10rem 0;
+}
+
+/*------------------
   UTILITY
   ------------------*/
 
