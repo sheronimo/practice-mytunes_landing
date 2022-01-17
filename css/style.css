@@ -46,6 +46,18 @@ a {
 .cf {
 	zoom: 1;
 }
+
+.container {
+	max-width: 1200px;
+	text-align: center;
+	margin: 0 auto;
+	padding: 0 3rem;
+}
+
+.lead-text {
+	font-size: 1.3rem;
+}
+
 /*------------------
   NAVIGATION
   ------------------*/
@@ -137,5 +149,63 @@ a {
 		background-color: #333;
 		width: 100%;
 		position: relative;
+	}
+}
+
+/*------------------
+  MAIN VISUAL
+  ------------------*/
+
+.main-visual {
+	background: url("../img/showcase.jpg") no-repeat center/cover;
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	overflow-y: hidden;
+}
+
+.main-section {
+	margin-top: 25vh;
+}
+
+.main-heading {
+	font-size: 4rem;
+}
+
+.main-subheading {
+	font-size: 2rem;
+	margin: 1.4rem 0;
+}
+
+.main-desc {
+	margin: 1.3rem 0;
+}
+
+/* MAIN VISUAL - Media Queries */
+@media screen and (max-width: 580px) {
+	.main-visual {
+		height: 50vh;
+	}
+
+	.main-section {
+		margin-top: 15vh;
+	}
+
+	.main-heading {
+		font-size: 3rem;
+	}
+
+	.main-subheading {
+		font-size: 1.5rem;
+	}
+}
+
+/*------------------
+  UTILITY
+  ------------------*/
+
+@media screen and (max-width: 580px) {
+	.hide-on-small {
+		display: none;
 	}
 }
